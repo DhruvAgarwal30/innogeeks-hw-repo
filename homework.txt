@@ -1,0 +1,67 @@
+1.Sum of even numbers.
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+int i,n,sum=0;
+printf("Enter the range");
+scanf("%d",&n);
+for(i=1;i<=n;i++)
+  {
+  if(i%2==0)
+  sum+=i;
+}
+printf("Sum of even numbers:%d",sum);
+getch();
+}
+
+
+2.Buzzfizz number.
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+int i;
+ for(i=1;i<=100;i++)
+ {
+ if(i%3==0 && i%5==0)
+ printf("buzzfiz:%d ",i);
+ else if(i%5==0)
+ printf("buzz%d ",i);
+ else if(i%3==0)
+ printf("fizz%d ",i);
+ else
+ printf("%d ",i);
+}
+getch();
+}
+
+
+3.Diamond pattern.
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+int i,j,k;
+for(i=1;i<=5;i++)
+{
+ for(j=1;j<=5-i;j++)
+ printf(" ");
+ for(k=1;k<=i;k++)
+ {
+ printf("* ");
+ }
+ printf("\n");
+ }
+ for(i=5;i>=1;i--)
+ {
+ for(j=1;j<=5-i;j++)
+ printf(" ");
+ for(k=1;k<=i;k++)
+ {
+ printf("* ");
+ }
+ printf("\n");
+ }
+ getch();       
+ }
